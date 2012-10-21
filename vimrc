@@ -11,6 +11,11 @@
     set history=500                 " lines of history to remember
     set mouse=a                     " always enable mouse input
 
+    " Colour schemes {{{
+        set background=dark
+        colorscheme solarized
+    " }}}
+
     set showmode                    " display the current mode
     set hidden                      " hides buffers instead of closing them
     set nobackup                    " no backup
@@ -20,7 +25,9 @@
 
     " Setup temp directory
     set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-    
+
+" }}}
+
 " File Formats {{{
 
     set fileformats=unix            " always use Unix file format
@@ -31,7 +38,7 @@
 
     filetype plugin indent on       " enable file type check and indent
     syntax on                       " enable syntax highlighting
-    set nu                          " set numbering rows
+    set number                      " set numbering rows
 
     set tabstop=4                   " spaces per tab
     set softtabstop=4
@@ -51,6 +58,8 @@
     " Highlight the 81st column 
     set textwidth=80
     set colorcolumn=+1
+
+" }}}
 
 " VIM UI {{{
 
@@ -77,11 +86,11 @@
     set foldcolumn=2                " set width of folding column (appears on left side of ruler)
     set foldmethod=indent
     set foldlevel=0
-    set foldlevelstart=0
+    set foldlevelstart=3
     set foldminlines=1
     set foldnestmax=20
 
-    autocmd BufNewFile,BufRead *.json set ft=javascript
+    autocmd BufNewFile,BufRead *.json set ft=javascript " set syntax highlighting for json files as javascript
     
 " }}}
 
