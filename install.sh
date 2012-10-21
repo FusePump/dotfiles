@@ -44,7 +44,7 @@ function delete() {
 }
 
 # Install dotfiles 
-function install() {
+function setup() {
   echo 'Creating symlinks'
   for i in "${DOTFILES[@]}"
   do
@@ -55,9 +55,9 @@ function install() {
 
 backup # backup dotfiles first
 delete # delete dotfiles
-install # delete dotfiles
+setup # delete dotfiles
 
 unset backup
 unset delete
-unset install
+unset setup
 source ~/.bashrc
