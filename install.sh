@@ -5,7 +5,7 @@
 
 # Constants
 BACKUP_DIR="backup" # backup directory
-DOTFILES=( "vimrc" "bashrc" "bash_aliases" "vim" ) # list of dotfiles without dots
+DOTFILES=( "vimrc" "bashrc" "bash_aliases" "vim" "profile" "subversion/servers" ) # list of dotfiles without dots
 
 cd "$(dirname "$0")" # move to the current folder
 
@@ -45,6 +45,9 @@ function delete() {
 
 # Install dotfiles 
 function setup() {
+  # run svn command to create .subversion folder
+  svn > /dev/null 2> /dev/null
+
   echo 'Creating symlinks'
   for i in "${DOTFILES[@]}"
   do
