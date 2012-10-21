@@ -48,7 +48,6 @@ function setup() {
   echo 'Creating symlinks'
   for i in "${DOTFILES[@]}"
   do
-    echo $(pwd)
     ln -s $(pwd)/$i $HOME/.$i
   done
   echo 'All symlinks created'
