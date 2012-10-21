@@ -1,3 +1,5 @@
+#!/bin/bash
+# 
 # Bash aliases
 #
 alias ll='ls -loh --group-directories-first'
@@ -40,3 +42,4 @@ alias gits='git svn'
 
 alias got='git '
 alias get='git '
+
