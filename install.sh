@@ -46,10 +46,16 @@ function delete() {
 # Install dotfiles 
 function install() {
   echo 'Creating symlinks'
+  for i in "${DOTFILES[@]}"
+  do
+    ln -s $(dirname "$0")/$i $HOME/.$i
+  done
+  echo 'All symlinks created'
 }
 
 backup # backup dotfiles first
 delete # delete dotfiles
+install # delete dotfiles
 
 unset backup
 unset delete
