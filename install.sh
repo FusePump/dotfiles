@@ -11,11 +11,6 @@ cd "$(dirname "$0")" # move to the current folder
 
 git pull # update repo
 
-# Install dotfiles 
-function install() {
-  rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" --exclude "README.md" -av . ~
-}
-
 # Backup dotfiles
 function backup() {
   echo 'Backing dotfiles...'
@@ -37,8 +32,26 @@ function backup() {
   echo 'Dotfiles backed up to '$BACKUP_DIR
 }
 
+# Delete dotfiles
+function delete() {
+  # delete dotfiles
+  for i in "${DOTFILES[@]}"
+  do
+    if [ -d "$HOME/.$i" -o -f "$HOME/.$i" ]; then # if file exists
+      rm -rf $HOME/.$i
+    fi
+  done
+}
+
+# Install dotfiles 
+function install() {
+  echo 'Creating symlinks'
+}
+
 backup # backup dotfiles first
+delete # delete dotfiles
 
 unset backup
+unset delete
 unset install
 source ~/.bashrc
