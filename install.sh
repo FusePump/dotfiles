@@ -26,7 +26,7 @@ function backup() {
   for i in "${DOTFILES[@]}"
   do
     if [ -d "$HOME/.$i" -o -f "$HOME/.$i" ]; then # if file exists
-      cp -r -L $HOME/.$i $BACKUP_DIR/$i
+      cp -r -L --parents $HOME/.$i $BACKUP_DIR/$i
     else
       echo $i" doesn't exist"
     fi
@@ -64,3 +64,4 @@ unset backup
 unset delete
 unset setup
 source ~/.bashrc
+
