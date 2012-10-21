@@ -11,6 +11,9 @@ cd "$(dirname "$0")" # move to the current folder
 
 git pull # update repo
 
+# run svn command to create .subversion folder
+svn > /dev/null 2> /dev/null
+
 # Backup dotfiles
 function backup() {
   echo 'Backing dotfiles...'
@@ -45,9 +48,6 @@ function delete() {
 
 # Install dotfiles 
 function setup() {
-  # run svn command to create .subversion folder
-  svn > /dev/null 2> /dev/null
-
   echo 'Creating symlinks'
   for i in "${DOTFILES[@]}"
   do
