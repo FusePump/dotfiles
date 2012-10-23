@@ -52,8 +52,8 @@
 
     set wrap
     set linebreak                   " wraps without <eol>
-    set lcs=tab:├─                  " Tabs are shown as ├──├──
-    set lcs+=trail:␣                " Show trailing spaces as ␣
+    "set lcs=tab:├─                  " Tabs are shown as ├──├──
+    "set lcs+=trail:␣                " Show trailing spaces as ␣
 
     " Highlight the 81st column 
     set textwidth=80
@@ -181,7 +181,7 @@
 
 " Spelling {{{
 
-    set spell                     " enable spell check
+    "set spell                     " enable spell check
 
     au BufNewFile,BufRead COMMIT_EDITMSG setlocal spell " git commit messages
     au Filetype help setlocal nospell
