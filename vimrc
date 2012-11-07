@@ -13,7 +13,7 @@
 
     " Colour schemes {{{
         set background=dark
-        colorscheme solarized
+        "colorscheme solarized
     " }}}
 
     set showmode                    " display the current mode
