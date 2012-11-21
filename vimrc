@@ -22,6 +22,9 @@
     set noswapfile                  " no swapfile
     set pastetoggle=<F3>            " disables smart indenting when pasting from outside the terminal
     set undofile
+    set encoding=utf-8
+    set fileencoding=utf-8
+    set fileencodings=utf-8
 
     " Setup temp directory
     set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
