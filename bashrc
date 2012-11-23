@@ -99,3 +99,10 @@ fi
 
 # set user locale
 export LANG="en_GB.utf8"
+
+# Local bashrc
+# Source local bashrc configs if exist
+if [ -e ~/.bashrc.local ]; then
+    . ~/.bashrc.local
+fi
+
