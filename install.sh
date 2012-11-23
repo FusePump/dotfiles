@@ -9,8 +9,6 @@ DOTFILES=( "vimrc" "bashrc" "bash_aliases" "vim" "profile" "subversion/servers" 
 
 cd "$(dirname "$0")" # move to the current folder
 
-git pull # update repo
-
 # run svn command to create .subversion folder
 svn update > /dev/null 2> /dev/null
 
