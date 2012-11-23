@@ -50,8 +50,8 @@
     set nolist                      " disable list on most files
     set foldenable                  " auto fold code
 
-    set wrap
-    set linebreak                   " wraps without <eol>
+    "set wrap
+    "set linebreak                   " wraps without <eol>
     "set lcs=tab:├─                  " Tabs are shown as ├──├──
     "set lcs+=trail:␣                " Show trailing spaces as ␣
 
