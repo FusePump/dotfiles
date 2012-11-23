@@ -2,11 +2,17 @@
 # 
 # Bash aliases
 #
-alias ll='ls -loh --group-directories-first'
-alias la='ls -A --group-directories-first'
+
+alias ll='ls -loh'
+alias la='ls -A'
+
+# If ls supports --group-directories-first then uncomment these lines
+#alias ll='ls -loh --group-directories-first'
+#alias la='ls -A --group-directories-first'
+#alias lgd='ls --group-directories-first'
+#alias lagd='ls -A --group-directories-first'
+
 alias lal='ls -Al'
-alias lgd='ls --group-directories-first'
-alias lagd='ls -A --group-directories-first'
 alias lh='ls -sh'
 alias llh='ls -lh'
 alias lah='ls -Ash'
