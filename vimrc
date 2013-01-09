@@ -58,8 +58,7 @@
     "set lcs=tab:├─                  " Tabs are shown as ├──├──
     "set lcs+=trail:␣                " Show trailing spaces as ␣
 
-    " Highlight the 81st column 
-    set textwidth=80
+    set textwidth=0
     set colorcolumn=+1
 
 " }}}
