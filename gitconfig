@@ -1,0 +1,11 @@
+[core]
+    excludesfile = ~/.cvsignore
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    tree = log --graph --pretty=oneline --abbrev-commit --all
+[color]
+    ui = true

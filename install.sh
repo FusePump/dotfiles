@@ -5,7 +5,7 @@
 
 # Constants
 BACKUP_DIR="backup" # backup directory
-DOTFILES=( "vimrc" "bashrc" "bash_aliases" "vim" "profile" "subversion/servers" ) # list of dotfiles without dots
+DOTFILES=( "vimrc" "bashrc" "bash_aliases" "vim" "profile" "subversion/servers" "cvsignore" "gitconfig" ) # list of dotfiles without dots
 
 cd "$(dirname "$0")" # move to the current folder
 
