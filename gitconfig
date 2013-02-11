@@ -9,3 +9,7 @@
     tree = log --graph --pretty=oneline --abbrev-commit --all
 [color]
     ui = true
+[http]
+    sslVerify = false
+[credential]
+    helper = cache --timeout=28800
