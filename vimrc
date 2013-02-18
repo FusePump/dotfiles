@@ -21,7 +21,7 @@
     set nobackup                    " no backup
     set noswapfile                  " no swapfile
     set pastetoggle=<F3>            " disables smart indenting when pasting from outside the terminal
-    set undofile
+    "set undofile                   " disabled due to old version running on some servers
     set encoding=utf-8
     set fileencoding=utf-8
     set fileencodings=utf-8
@@ -59,7 +59,7 @@
     "set lcs+=trail:␣                " Show trailing spaces as ␣
 
     set textwidth=0
-    set colorcolumn=+1
+    "set colorcolumn=+1             " Disabled due to old vim version on some servers
 
 " }}}
 
