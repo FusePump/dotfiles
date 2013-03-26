@@ -22,3 +22,4 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 export TERM=linux
+export DISPLAY=:1
